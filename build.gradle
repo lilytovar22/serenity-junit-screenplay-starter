@@ -25,7 +25,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
     testImplementation 'net.serenity-bdd:serenity-junit5:4.0.15'
     testImplementation group: 'org.junit.platform', name: 'junit-platform-launcher', version: '1.8.0'
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher", 
+             "org.junit.jupiter:junit-jupiter-engine:5.10.0")
     testImplementation 'org.slf4j:slf4j-simple:2.0.7'
     testImplementation 'net.serenity-bdd:serenity-ensure:4.0.15'
     testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '7.13.0'
